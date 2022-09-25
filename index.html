@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Main Style File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Normalize File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="pop-menu">
+        <i class="fas fa-times fa-2x exit"></i>
+        <a href="#">Home</a>
+        <a href="#About">About</a>
+        <a href="#Features">Features</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact Us</a>
+      </div>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              SAMER
+            </a>
+          </div>
+          <ul class="menus">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+          <div class="small-menu">
+            <i class="fas fa-bars fa-2x bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="slider">
+        <div class="overlay"></div>
+        <i class="fas fa-chevron-left arrows left-arrow"></i>
+        <i class="fas fa-chevron-right arrows right-arrow"></i>
+        <ul class="bullets">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <div class="about" id="About">
+      <div class="container">
+        <div class="image">
+          <img src="images/about-me.webp" alt="">
+        </div>
+        <div class="info">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis dolorum alias corporis, saepe aspernatur, reiciendis, temporibus doloribus voluptatibus provident dignissimos facilis praesentium adipisci veniam dicta. Dolorum molestiae possimus alias!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas, voluptates reprehenderit perspiciatis aliquid at dolores laboriosam a, commodi ullam sint eaque error tempore exercitationem. Exercitationem in deleniti nesciunt. Ad?
+          </p>
+          <a class="contact-btn" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="features" id="Features">
+      <div class="container">
+        <div class="head-section">
+          <h2>Features</h2>
+        </div>
+        <div class="accordion-container">
+          <button class="accordion">Work Completion Speed</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi voluptas veritatis quod numquam incidunt fugiat ex facilis doloribus laboriosam ut velit fuga eaque, repellendus modi, consequatur dolorem veniam tempore?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi voluptas veritatis quod numquam incidunt fugiat ex facilis doloribus laboriosam ut velit fuga eaque, repellendus modi, consequatur dolorem veniam tempore?
+            </p>
+          </div>
+
+          <button class="accordion">Latest Technology</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat explicabo rem excepturi esse iste accusamus quasi harum nostrum, consequuntur est, perspiciatis iure a laboriosam aliquam laudantium, quae commodi facilis possimus!
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat explicabo rem excepturi esse iste accusamus quasi harum nostrum, consequuntur est, perspiciatis iure a laboriosam aliquam laudantium, quae commodi facilis possimus!
+            </p>
+          </div>
+
+          <button class="accordion">Our Experiences</button>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatem quaerat deserunt? Neque tenetur enim consectetur velit, esse sit consequatur! Nisi possimus ipsum iste qui assumenda pariatur, neque quia placeat.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptatem quaerat deserunt? Neque tenetur enim consectetur velit, esse sit consequatur! Nisi possimus ipsum iste qui assumenda pariatur, neque quia placeat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio" id="Portfolio">
+      <div class="container">
+        <div class="head-section">
+          <h2>Portfolio</h2>
+        </div>
+        <button class="active">JS Small Projects</button>
+        <button>Templates</button>
+        <div class="shuffle js-image-container active-shuffle">
+          <div class="image"><img src="images/portfolioJS-1.png" alt=""></div>
+          <div class="image"><img src="images/portfolioJS-2.png" alt=""></div>
+          <div class="image"><img src="images/portfolioJS-3.png" alt=""></div>
+          <div class="image"><img src="images/portfolioJS-4.png" alt=""></div>
+          <div class="image"><img src="images/portfolioJS-5.png" alt=""></div>
+        </div>
+        <div class="shuffle Temp-image-container">
+          <div class="image"><img src="images/portfolioTemp-1.png" alt=""></div>
+          <div class="image"><img src="images/portfolioTemp-2.png" alt=""></div>
+          <div class="image"><img src="images/portfolioTemp-3.png" alt=""></div>
+          <div class="image"><img src="images/portfolioTemp-4.png" alt=""></div>
+        </div>
+        <div class="popup-image">
+          <span>&times;</span>
+          <img src="images/portfolioJS-1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="Contact">
+      <div class="head-section">
+        <h2>Contact</h2>
+      </div>
+      <div class="container">
+        <form action>
+          <input class="main-input" type="text" name="name" placeholder="Your Name">
+          <input class="main-input" type="email" name="mail" placeholder="Your Email">
+          <textarea class="main-input" name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+        <div class="info">
+          <h4>Get In Touch</h4>
+          <span class="phone">+00 123.456.789</span>
+          <span class="phone">+00 123.456.789</span>
+          <h4>Where We Are</h4>
+          <address>
+              Awesome Address 17 <br> Not City, NC <br> 123-4567-890 <br> NCC
+          </address>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <h3>Social</h3>
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-twitch"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <p class="copyright">&copy; 2022 <span>Samer</span> All Right Reserved</p>
+      </div>
+    </footer>
+    <!-- Main JavaScript File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
