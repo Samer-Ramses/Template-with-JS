@@ -104,10 +104,11 @@ bullets.forEach((element, num) => {
 })
 
 // Pop-menu
-let bars = document.querySelector(".bars")
-  popMenu = document.querySelector(".pop-menu")
-  exit = document.querySelector(".pop-menu .exit")
-  navbar = document.querySelector("nav");
+let bars = document.querySelector(".bars"),
+  popMenu = document.querySelector(".pop-menu"),
+  exit = document.querySelector(".pop-menu .exit"),
+  navbar = document.querySelector("nav"),
+  popMenuLinks = document.querySelectorAll(".pop-menu a");
 bars.addEventListener("click", function(){
     popMenu.classList.add("active-menu");
     document.querySelector("nav").style.display = "none";
@@ -116,7 +117,12 @@ exit.addEventListener("click", function(){
     popMenu.classList.remove("active-menu");
     document.querySelector("nav").style.display = "block";
 });
-
+popMenuLinks.forEach(element => {
+    element.addEventListener("click", () => {
+        popMenu.classList.remove("active-menu");
+        document.querySelector("nav").style.display = "block";
+    });
+});
 // Accordion
 let accordion = document.querySelectorAll(".features .container .accordion-container .accordion");
 
