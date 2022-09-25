@@ -63,7 +63,7 @@ function changing(){
     }
     bullets.forEach(e => e.classList.remove("active"));
     bullets[currentImage - 1].classList.add("active");
-    landing.style.backgroundImage = `url(../images/slide-${currentImage}.jpg)`;
+    landing.style.backgroundImage = `url(images/slide-${currentImage}.jpg)`;
 }
 
 // Auto Changing
@@ -75,7 +75,7 @@ leftArrow.addEventListener("click", function(){
         currentImage--;
         bullets.forEach(e => e.classList.remove("active"));
         bullets[currentImage - 1].classList.add("active");
-        landing.style.backgroundImage = `url(../images/slide-${currentImage}.jpg)`;
+        landing.style.backgroundImage = `url(images/slide-${currentImage}.jpg)`;
         clearInterval(autoChanging);
         autoChanging = setInterval(changing ,10000);
     }
@@ -85,7 +85,7 @@ rightArrow.addEventListener("click", function(){
         currentImage++;
         bullets.forEach(e => e.classList.remove("active"));
         bullets[currentImage - 1].classList.add("active");
-        landing.style.backgroundImage = `url(../images/slide-${currentImage}.jpg)`;
+        landing.style.backgroundImage = `url(images/slide-${currentImage}.jpg)`;
         clearInterval(autoChanging);
         autoChanging = setInterval(changing ,10000);
     }
@@ -94,7 +94,7 @@ rightArrow.addEventListener("click", function(){
 // Bullets Changing
 bullets.forEach((element, num) => {
     element.addEventListener('click', function(){
-        landing.style.backgroundImage = `url(../images/slide-${num + 1}.jpg)`;
+        landing.style.backgroundImage = `url(images/slide-${num + 1}.jpg)`;
         currentImage = num + 1;
         clearInterval(autoChanging);
         autoChanging = setInterval(changing ,10000);
